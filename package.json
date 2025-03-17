@@ -33,7 +33,7 @@
     "gulp-html-bemlinter": "3.0.1",
     "html-validate": "8.18.1",
     "htmlacademy-backstopjs": "6.6.1",
-    "linthtml-config-htmlacademy": "1.0.23",
+    "linthtml-config-htmlacademy": "1.0.25",
     "sass": "1.75.0",
     "sharp": "0.33.3",
     "stylelint": "16.3.1",
@@ -56,5 +56,8 @@
   },
   "volta": {
     "node": "20.12.2"
+  },
+  "overrides": {
+    "es5-ext": "0.10.53"
   }
 }
