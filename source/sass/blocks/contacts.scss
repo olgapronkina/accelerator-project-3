@@ -1,0 +1,144 @@
+.contacts {
+  color: $color-light;
+  background-color: $background-special;
+}
+
+.contacts__wrapper {
+  padding: 70px 15px;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 100px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 100px;
+  }
+}
+
+.contacts__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba($border-light, 0.2);
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 30px;
+  font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $min-tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 52.5px;
+  }
+}
+
+.contacts__title {
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $min-tablet-width) {
+    margin: 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.contacts__name {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  font-weight: 400;
+  color: rgba($color-advantages, 0.8);
+  text-transform: uppercase;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts__value {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-light;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &:active {
+    color: $color-light;
+    border-bottom: 2px solid $color-light;
+  }
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 17px;
+  }
+}
+
+.contacts__item:first-child .contacts__value {
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
+}
+
+.contacts__value br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.contacts__location {
+  display: block;
+}

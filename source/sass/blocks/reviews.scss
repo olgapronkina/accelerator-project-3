@@ -1,0 +1,247 @@
+.reviews__wrapper {
+  position: relative;
+  padding: 50px 15px;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-secondary;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 3px;
+    font-size: 50px;
+  }
+}
+
+.reviews__slider-navigation {
+  position: absolute;
+  top: 55px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+
+  @media (min-width: $min-tablet-width) {
+    top: 67px;
+    right: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 85px;
+    right: 105px;
+  }
+}
+
+.reviews__slider-button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background-color: $color-light;
+  }
+
+  &:active {
+    background-color: $color-light;
+    opacity: 0.7;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: $icons-background-main;
+    mask-image: url('/__spritemap#sprite-links-arrow-view');
+  }
+}
+
+.reviews__slider-button--prev {
+  &::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.reviews__slider-button--next {
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.reviews__slider-button--disabled {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  &::after {
+    background-color: $button-disabled;
+  }
+}
+
+.reviews-slide {
+  width: 290px;
+  padding: 30px 15px;
+  border: 2px solid $button-border;
+  border-radius: 16px;
+  box-sizing: border-box;
+
+  @media (min-width: $min-tablet-width) {
+    width: 560px;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 604px;
+    padding: 50px;
+    padding-right: 46px;
+  }
+}
+
+.reviews-slide__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 25px;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews-slide__author {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @media (min-width: $min-tablet-width) {
+    gap: 15px;
+  }
+}
+
+.reviews-slide__image {
+  display: block;
+  border-radius: 50%;
+}
+
+.reviews-slide__author-name {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-secondary;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews-slide__others {
+  display: flex;
+  gap: 25px;
+}
+
+.reviews-slide__others-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: $color-secondary;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.reviews-slide__others-description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.9;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+  }
+}
+
+.reviews-slide__main-text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-secondary;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.reviews-slide__extra-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
+}

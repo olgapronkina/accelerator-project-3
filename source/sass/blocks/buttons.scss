@@ -1,0 +1,161 @@
+.button {
+  position: relative;
+
+  &--primary {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+    color: $color-secondary;
+    background-color: transparent;
+    border: 1px solid $button-border;
+    border-radius: 30px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: start;
+    display: inline-block;
+    box-sizing: border-box;
+
+    @media (min-width: $min-tablet-width) {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.28px;
+      padding: 20px 30px;
+    }
+
+    &:hover {
+      color: $color-light;
+      background-color: $color-secondary;
+
+      &.button--icon::before {
+        background-color: $color-light;
+      }
+    }
+
+    &:active {
+      background-color: $color-secondary;
+      opacity: 0.7;
+
+      &.button--icon::before {
+        background-color: $color-light;
+      }
+    }
+
+    &:focus {
+      color: $color-secondary;
+      background-color: $color-light;
+
+      &.button--icon::before {
+        background-color: $color-secondary;
+      }
+    }
+
+    &:disabled {
+      color: $button-disabled;
+      border: 1px solid $button-disabled;
+      &.button--icon::before {
+        background-color: $button-disabled;
+      }
+    }
+  }
+
+  &--secondary {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+    color: $color-light;
+    background-color: $color-secondary;
+    border: 1px solid $color-light;
+    border-radius: 30px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: start;
+    display: inline-block;
+    box-sizing: border-box;
+
+    @media (min-width: $min-tablet-width) {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.28px;
+      padding: 20px 30px;
+    }
+
+    &:hover {
+      color: $color-secondary;
+      background-color: $color-light;
+
+      &.button--icon::before {
+        background-color: $color-secondary;
+      }
+    }
+
+    &:active {
+      background-color: $color-light;
+      opacity: 0.7;
+
+      &.button--icon::before {
+        background-color: $color-secondary;
+      }
+    }
+
+    &:focus {
+      color: $color-light;
+      background-color: $color-secondary;
+
+      &.button--icon::before {
+        background-color: $color-light;
+      }
+    }
+
+    &:disabled {
+      color: $button-disabled;
+      border: 1px solid $button-disabled;
+      &.button--icon::before {
+        background-color: $button-disabled;
+      }
+    }
+  }
+}
+
+.button--icon {
+  &::before {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background-color: $icons-background-main;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background-color: $icons-main;
+    mask-size: 16px 8px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $min-tablet-width) {
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}

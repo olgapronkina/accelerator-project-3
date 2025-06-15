@@ -1,0 +1,14 @@
+.reviews-slider .reviews-slider__scrollbar.swiper-scrollbar {
+  display: none;
+  height: 2px;
+  background-color: rgba($background-special, 0.2);
+
+  @media (min-width: $min-tablet-width) {
+    display: block;
+  }
+}
+
+.reviews-slider__scrollbar .swiper-scrollbar-drag {
+  background-color: $background-special;
+  border-radius: 0;
+}
