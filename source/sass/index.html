@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship</title>
+    <link rel="stylesheet" href="sass/style.scss" />
+  </head>
+
+  <body class="page-body">
+    <!-- пример использования спрайта -->
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg> -->
+
+    <main class="main">
+      <h1 class="visually-hidden">Проект "Стажировка"</h1>
+      <section class="hero" data-test="hero">
+        <h2 class="visually-hidden">Промо-блок</h2>
+        <div class="wrapper hero__wrapper">
+          <header class="hero__header">
+            <nav class="hero__navigation">
+              <img
+                class="hero__logo"
+                src="/__spritemap#sprite-logo-view"
+                alt="Лого сайта стажировки."
+                width="50"
+                height="50"
+              />
+              <button
+                class="hero__menu-button button"
+                type="button"
+                data-burger-button="true"
+              >
+                Меню
+              </button>
+              <ul class="hero__menu list-reset" data-header-list="true">
+                <li class="hero__menu-item">
+                  <a class="hero__menu-link" href="#about">о проекте</a>
+                </li>
+                <li class="hero__menu-item hero__menu-item--category">
+                  <button
+                    class="hero__menu-category-title"
+                    type="button"
+                    data-header-category-title="true"
+                  >
+                    программы
+                  </button>
+                  <ul
+                    class="hero__menu-category-list list-reset"
+                    data-header-inner-list="true"
+                  >
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#internship"
+                        >Стажировки</a
+                      >
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#volunteering"
+                        >Волонтёрство</a
+                      >
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#study"
+                        >Учёба</a
+                      >
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#">Религия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hero__menu-item">
+                  <a class="hero__menu-link" href="#how-to-go">как поехать</a>
+                </li>
+                <li class="hero__menu-item">
+                  <a class="hero__menu-link" href="#reviews">отзывы</a>
+                </li>
+                <li class="hero__menu-item hero__menu-item--category">
+                  <button
+                    class="hero__menu-category-title"
+                    type="button"
+                    data-header-category-title="true"
+                  >
+                    новости
+                  </button>
+                  <ul class="hero__menu-category-list list-reset">
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#">Общее</a>
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#"
+                        >Волонтёрство</a
+                      >
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#"
+                        >Стажировки</a
+                      >
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#">Карьера</a>
+                    </li>
+                    <li class="hero__menu-category-item">
+                      <a class="hero__menu-category-link" href="#"
+                        >Путешествия</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="hero__menu-item">
+                  <a class="hero__menu-link" href="#contacts">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <div class="hero__slider slider swiper">
+          <div class="slider__pagination swiper-pagination"></div>
+          <div class="slider__wrapper swiper-wrapper">
+            <div
+              class="slider__element slider__element--first swiper-slide swiper-slide-active"
+            >
+              <div class="slider__content">
+                <h3 class="slider__title">
+                  Глобальный профессиональный опыт обучения за рубежом
+                </h3>
+                <p>
+                  Погрузитесь в академическую программу, проходя практику
+                  в разных городах, ощущая настоящий студенческий стиль жизни!
+                </p>
+                <div class="slider__button-container">
+                  <a
+                    class="slider__button-more button button button--primary button--icon"
+                    href="#"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slider__element slider__element--second swiper-slide">
+              <div class="slider__content">
+                <h3 class="slider__title">
+                  Волонтёрские программы – внесите свой вклад в общество
+                </h3>
+                <p>
+                  Возможности для преподавания, органического сельского
+                  хозяйства, устойчивого образа жизни и другое.
+                </p>
+                <div class="slider__button-container">
+                  <a class="slider__button-more button" href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__element slider__element--third swiper-slide">
+              <div class="slider__content">
+                <h3 class="slider__title">
+                  Программы стажировок в крупнейших компаниях мира
+                </h3>
+                <p>
+                  Получите незаменимый опыт работы в ведущих мировых компаниях и
+                  государственных организациях.
+                </p>
+                <div class="slider__button-container">
+                  <a class="slider__button-more button" href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-test="about">
+        <div class="wrapper about__wrapper">
+          <div class="about__content">
+            <div class="about__title-container">
+              <h2 class="about__title">О проекте «Стажировка»</h2>
+              <p>
+                «Стажировка» — совместный проект правительств и волонтёрских
+                бригад.
+              </p>
+            </div>
+            <div class="about__description-container">
+              <h3>Наша цель</h3>
+              <p>
+                Наша деятельность направлена на повышение квалификации молодых
+                специалистов на ранних и средних стадиях карьеры, предоставляя
+                им инструменты для решения сложных проблем, с которыми
+                сталкиваются в мире. Цель центра — наделить этих людей
+                способностью инициировать значимые изменения.
+              </p>
+            </div>
+            <button
+              class="about__button-more button button--primary button--icon"
+              type="button"
+            >
+              подробнее о проекте
+            </button>
+          </div>
+          <div class="about__advantages">
+            <div class="about__advantage">
+              <h3>Более 250 программ</h3>
+              <p>
+                учебных и рабочих, разной длительностью от 3 месяцев до 1 года
+              </p>
+            </div>
+            <div class="about__advantage">
+              <h3>Более 3000 участников</h3>
+              <p>
+                уже успешно прошли программу от «Стажировка» и остались в разных
+                странах
+              </p>
+            </div>
+            <div class="about__advantage">
+              <h3>участники из 60 стран</h3>
+              <p>
+                студенты со всего мира приезжают на программу «Стажировки» от 3
+                месяцев до 1 года
+              </p>
+            </div>
+            <div class="about__advantage">
+              <h3>
+                от 4 200 $<br />
+                до 8 400 $
+              </h3>
+              <p>грант всем участникам для комфортного прохождения программы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs" id="programs" data-test="programs">
+        <div class="wrapper programs__wrapper">
+          <div class="programs__header-container">
+            <h2 class="programs__title">Программы</h2>
+            <a
+              class="programs__button-more button button--primary button--icon"
+              href="#"
+              >все программы</a
+            >
+          </div>
+          <div class="programs__slider slider-programs swiper">
+            <div class="slider-programs__container swiper-wrapper">
+              <div
+                class="slider-programs__slide swiper-slide swiper-slide-active slider-programs__slide--first"
+                id="internship"
+              >
+                <h3 class="slider-programs__slide-title">Стажировки</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>
+                    Получите незаменимый опыт работы в крупнейших мировых
+                    компаниях.
+                  </p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+              <div
+                class="slider-programs__slide swiper-slide slider-programs__slide--second"
+                id="volunteering"
+              >
+                <h3 class="slider-programs__slide-title">Волонтёрство</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>Помогайте другим и развивайте свои лидерские качества</p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+              <div
+                class="slider-programs__slide swiper-slide slider-programs__slide--third"
+                id="study"
+              >
+                <h3 class="slider-programs__slide-title">Учёба</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>Получите образование и измените своё будущее.</p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="slider-programs__slide swiper-slide swiper-slide-active slider-programs__slide--first"
+                id="internship"
+              >
+                <h3 class="slider-programs__slide-title">Стажировки</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>
+                    Получите незаменимый опыт работы в крупнейших мировых
+                    компаниях.
+                  </p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+              <div
+                class="slider-programs__slide swiper-slide slider-programs__slide--second"
+                id="volunteering"
+              >
+                <h3 class="slider-programs__slide-title">Волонтёрство</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>Помогайте другим и развивайте свои лидерские качества</p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+              <div
+                class="slider-programs__slide swiper-slide slider-programs__slide--third"
+                id="study"
+              >
+                <h3 class="slider-programs__slide-title">Учёба</h3>
+                <div class="slider-programs__slide-inner-wrapper">
+                  <p>Получите образование и измените своё будущее.</p>
+                  <a
+                    class="slider-programs__slide-button button button--icon"
+                    href="#"
+                    ><span class="visually-hidden">Подробнее</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slider-programs__scrollbar swiper-scrollbar"></div>
+          </div>
+          <div class="programs__slider-navigation">
+            <button
+              class="programs__slider-button programs__slider-button--prev button"
+              type="button"
+            >
+              <span class="visually-hidden">предыдущий слайд</span>
+            </button>
+            <button
+              class="programs__slider-button programs__slider-button--next button"
+              type="button"
+            >
+              <span class="visually-hidden">следующий слайд</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grant" id="how-to-go" data-test="grant">
+        <div class="wrapper grant__wrapper">
+          <div class="grant__description-container">
+            <h2 class="grant__title">Как поехать</h2>
+            <p>
+              Свяжитесь с координатором, чтобы узнать полную информацию.
+              Вы получите актуальные сведения о доступных программах и городах,
+              в которых можете пройти программу.
+            </p>
+            <picture class="grant__picture">
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                width="498"
+                height="363"
+                srcset="
+                  ./img/grant-desktop@1x.webp 1x,
+                  ./img/grant-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                width="678"
+                height="375"
+                srcset="
+                  ./img/grant-tablet@1x.webp 1x,
+                  ./img/grant-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                width="280"
+                height="280"
+                srcset="
+                  ./img/grant-mobile@1x.webp 1x,
+                  ./img/grant-mobile@2x.webp 2x
+                "
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1440px)"
+                width="498"
+                height="363"
+                srcset="
+                  ./img/grant-desktop@1x.png 1x,
+                  ./img/grant-desktop@2x.png 2x
+                "
+              />
+              <source
+                type="image/png"
+                media="(min-width: 768px)"
+                width="678"
+                height="375"
+                srcset="
+                  ./img/grant-tablet@1x.png 1x,
+                  ./img/grant-tablet@2x.png 2x
+                "
+              />
+              <img
+                class="grant__image"
+                src="./img/grant-mobile@1x.png"
+                srcset="./img/grant-mobile@2x.png 2x"
+                alt="Разноцветные указатели направлений в разные страны."
+                width="290"
+                height="200"
+              />
+            </picture>
+          </div>
+          <div class="grant__requirements">
+            <h3 class="grant__requirements-title">
+              Чтобы получить грант на обучение, вам нужно:
+            </h3>
+            <ol class="grant__requirements-list list-reset">
+              <li class="grant__requirements-item" data-index="1">
+                Быть в возрасте от 16 до 30 лет
+              </li>
+              <li class="grant__requirements-item" data-index="2">
+                Иметь оконченное среднее образование
+              </li>
+              <li class="grant__requirements-item" data-index="3">
+                Иметь документально подтверждённое отсутствие судимости и пройти
+                консульскую проверку
+              </li>
+              <li class="grant__requirements-item" data-index="4">
+                За последние 2 года быть не больше 3х месяцев подряд непрерывно
+                в одной стране
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="news" data-test="news">
+        <div class="wrapper news__wrapper">
+          <h2 class="news__title">Новости и материалы</h2>
+          <ul class="news__menu list-reset">
+            <li class="news__menu-item">
+              <button
+                class="news__menu-button button news__menu-button--active"
+                type="button"
+              >
+                общее
+              </button>
+            </li>
+            <li class="news__menu-item">
+              <button class="news__menu-button button" type="button">
+                Волонтёрство
+              </button>
+            </li>
+            <li class="news__menu-item">
+              <button class="news__menu-button button" type="button">
+                Стажировки
+              </button>
+            </li>
+            <li class="news__menu-item">
+              <button class="news__menu-button button" type="button">
+                Карьера
+              </button>
+            </li>
+            <li class="news__menu-item">
+              <button class="news__menu-button button" type="button">
+                путешествия
+              </button>
+            </li>
+          </ul>
+          <div class="news__container">
+            <article class="news__article new new--1 new--promo">
+              <time class="new__date" datetime="2023-03-23">23/03/2023</time>
+              <h3 class="new__title">
+                Интервью с участницей программы стажировки
+              </h3>
+              <div class="new__inner-container">
+                <p>
+                  Саша рассказывает, как попала в программу и как прошла
+                  6-месячная стажировка в ISOFound
+                </p>
+                <a class="new__button-more button button--icon" href="#"
+                  ><span class="visually-hidden">Подробнее</span></a
+                >
+              </div>
+            </article>
+            <article class="news__article new new--2">
+              <time class="new__date" datetime="2023-03-20">20/03/2023</time>
+              <h3 class="new__title">Путешествуем по миру</h3>
+              <div class="new__inner-container">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="new__button-more button" href="#"
+                  ><span class="visually-hidden">Подробнее</span></a
+                >
+              </div>
+            </article>
+            <article class="news__article new new--3">
+              <time class="new__date" datetime="2023-03-17">17/03/2023</time>
+              <h3 class="new__title">Новая программа волонтёрства</h3>
+              <div class="new__inner-container">
+                <p>Программа помощи детям длительностью 4 месяца</p>
+                <a class="new__button-more button" href="#"
+                  ><span class="visually-hidden">Подробнее</span></a
+                >
+              </div>
+            </article>
+            <article class="news__article new new--4">
+              <time class="new__date" datetime="2023-03-10">10/03/2023</time>
+              <h3 class="new__title">Построй свою карьеру</h3>
+              <div class="new__inner-container">
+                <p>
+                  Ведущие компании готовы трудоустроить выпускников стажировки
+                </p>
+                <a class="new__button-more button" href="#"
+                  ><span class="visually-hidden">Подробнее</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="news__pagination-wrapper">
+            <button
+              class="news__scroll-button news__scroll-button--prev button"
+              type="button"
+            >
+              <span class="visually-hidden">Предыдущая страница</span>
+            </button>
+            <ul class="news__pagination list-reset">
+              <li class="news__pagination-item">
+                <button class="news__pagination-button button" type="button">
+                  1
+                </button>
+              </li>
+              <li class="news__pagination-item">
+                <button class="news__pagination-button button" type="button">
+                  2
+                </button>
+              </li>
+              <li class="news__pagination-item">
+                <button class="news__pagination-button button" type="button">
+                  3
+                </button>
+              </li>
+              <li class="news__pagination-item">
+                <button class="news__pagination-button button" type="button">
+                  4
+                </button>
+              </li>
+            </ul>
+            <button
+              class="news__scroll-button news__scroll-button--next button"
+              type="button"
+            >
+              <span class="visually-hidden">Следующая страница</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" data-test="FAQ">
+        <div class="wrapper faq__wrapper">
+          <h2 class="faq__title">Вопросы и ответы</h2>
+          <div class="faq__questions-container">
+            <div class="faq__question">
+              <div class="faq__question-container">
+                <h3 class="faq__question-title">
+                  Кто организатор? Какие сроки у программы?
+                </h3>
+                <button class="faq__question-button button" type="button">
+                  <span class="visually-hidden">посмотреть ответ</span>
+                </button>
+              </div>
+              <p>
+                Организатором программы является проект «Стажировка» в
+                сотрудничестве с образовательными учреждениями. Сроки программы
+                обмена могут варьироваться от одного семестра до года.
+              </p>
+            </div>
+            <div class="faq__question">
+              <div class="faq__question-container">
+                <h3 class="faq__question-title">
+                  Что такое грант на обучение?
+                </h3>
+                <button class="faq__question-button button" type="button">
+                  <span class="visually-hidden">посмотреть ответ</span>
+                </button>
+              </div>
+              <p>
+                Грант на обучение — это финансовая поддержка, которую
+                предоставляет организатор программы обмена студентами для оплаты
+                учебных расходов.
+              </p>
+            </div>
+            <div class="faq__question faq__question--opened">
+              <div class="faq__question-container">
+                <h3 class="faq__question-title">
+                  Как определяется стоимость программы?
+                </h3>
+                <button
+                  class="faq__question-button faq__question-button--active button"
+                  type="button"
+                >
+                  <span class="visually-hidden">посмотреть ответ</span>
+                </button>
+              </div>
+              <p>
+                Полная стоимость определяется организаторами в зависимости
+                от направления. В большинстве случаев грант «Стажировка»
+                не покрывает полную стоимость программы, и поэтому
+                предусматривается определённая доля личного участия.
+              </p>
+            </div>
+            <div class="faq__question">
+              <div class="faq__question-container">
+                <h3 class="faq__question-title">
+                  Признаётся ли учёба в рамках проекта <br />для дальнейшего
+                  обучения?
+                </h3>
+                <button class="faq__question-button button" type="button">
+                  <span class="visually-hidden">посмотреть ответ</span>
+                </button>
+              </div>
+              <p>
+                Студенты, участвующие в проекте, могут использовать полученные
+                знания и навыки в своей будущей профессиональной деятельности
+                или продолжить обучение в высших учебных заведениях. Кроме того,
+                многие университеты и колледжи предоставляют кредиты за участие
+                в программе обмена студентами.
+              </p>
+            </div>
+            <div class="faq__question">
+              <div class="faq__question-container">
+                <h3 class="faq__question-title">
+                  Как выглядит полный процесс регистрации на программу
+                  «Стажировка»?
+                </h3>
+                <button class="faq__question-button button" type="button">
+                  <span class="visually-hidden">посмотреть ответ</span>
+                </button>
+              </div>
+              <p>
+                Процесс регистрации на программу обмена включает выбор
+                университета-партнера и программы обмена, общение с
+                координатором программы, заполнение заявления и предоставление
+                необходимых документов, прохождение интервью, оформление визы,
+                жилья и страховки, обучение по безопасности за границей и
+                подписание договора об участии в программе. Подробнее можно
+                узнать позвонив в центр.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews" data-test="reviews">
+        <div class="wrapper reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__slider reviews-slider swiper">
+            <ul class="reviews-slider__list list-reset swiper-wrapper">
+              <li class="reviews-slider__slide reviews-slide swiper-slide">
+                <header class="reviews-slide__header">
+                  <figure class="reviews-slide__author">
+                    <picture class="reviews-slide__picture">
+                      <source
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="90"
+                        height="90"
+                        srcset="
+                          ./img/avatar-1-tablet@1x.webp 1x,
+                          ./img/avatar-1-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        width="60"
+                        height="60"
+                        srcset="
+                          ./img/avatar-1-mobile@1x.webp 1x,
+                          ./img/avatar-1-mobile@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/jpg"
+                        media="(min-width: 768px)"
+                        width="90"
+                        height="90"
+                        srcset="
+                          ./img/avatar-1-tablet@1x.jpg 1x,
+                          ./img/avatar-1-tablet@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="reviews-slide__image"
+                        src="./img/avatar-1-mobile@1x.jpg"
+                        srcset="./img/avatar-1-mobile@2x.jpg 2x"
+                        alt="Аватар пользователя Лола Алекс."
+                        width="60"
+                        height="60"
+                      />
+                    </picture>
+                    <figcaption class="reviews-slide__author-name">
+                      Лола<br />Алекс
+                    </figcaption>
+                  </figure>
+                  <div class="reviews-slide__others">
+                    <div class="reviews-slide__others-item">
+                      <p class="reviews-slide__others-title">программа</p>
+                      <p class="reviews-slide__others-description">
+                        Masa Art Challenge
+                      </p>
+                    </div>
+                    <div class="reviews-slide__others-item">
+                      <p class="reviews-slide__others-title">Дата</p>
+                      <p class="reviews-slide__others-description">
+                        Осень 2022
+                      </p>
+                    </div>
+                  </div>
+                </header>
+                <h3 class="reviews-slide__main-text">
+                  Я могу с уверенностью сказать, что это был один из самых
+                  незабываемых опытов в жизни!
+                </h3>
+                <p class="reviews-slide__extra-text">
+                  Я рекомендую программу «Стажировка» всем студентам, желающим
+                  получить незабываемые впечатления. Сочетание путешествий,
+                  общения и значимой работы действительно отличает её от других
+                  программ, и я чувствую огромную благодарность
+                  за предоставленную мне возможность.
+                </p>
+              </li>
+              <li class="reviews-slider__slide reviews-slide swiper-slide">
+                <header class="reviews-slide__header">
+                  <figure class="reviews-slide__author">
+                    <picture class="reviews-slide__picture">
+                      <source
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="90"
+                        height="90"
+                        srcset="
+                          ./img/avatar-2-tablet@1x.webp 1x,
+                          ./img/avatar-2-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        width="60"
+                        height="60"
+                        srcset="
+                          ./img/avatar-2-mobile@1x.webp 1x,
+                          ./img/avatar-2-mobile@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/jpg"
+                        media="(min-width: 768px)"
+                        width="90"
+                        height="90"
+                        srcset="
+                          ./img/avatar-2-tablet@1x.jpg 1x,
+                          ./img/avatar-2-tablet@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="reviews-slide__image"
+                        src="./img/avatar-2-mobile@1x.jpg"
+                        srcset="./img/avatar-2-mobile@2x.jpg 2x"
+                        alt="Аватар пользователя Лола Алекс."
+                        width="60"
+                        height="60"
+                      />
+                    </picture>
+                    <figcaption class="reviews-slide__author-name">
+                      Давид<br />Иванов
+                    </figcaption>
+                  </figure>
+                  <div class="reviews-slide__others">
+                    <div class="reviews-slide__others-item">
+                      <p class="reviews-slide__others-title">программа</p>
+                      <p class="reviews-slide__others-description">
+                        Volunteer Chance
+                      </p>
+                    </div>
+                    <div class="reviews-slide__others-item">
+                      <p class="reviews-slide__others-title">Дата</p>
+                      <p class="reviews-slide__others-description">Лето 2022</p>
+                    </div>
+                  </div>
+                </header>
+                <h3 class="reviews-slide__main-text">
+                  Благодаря опыту стажировки я узнал так много нового о себе
+                  и об окружающем мире.
+                </h3>
+                <p class="reviews-slide__extra-text">
+                  Каждый день был возможностью оказать ощутимое влияние на жизнь
+                  других людей. Я бы очень рекомендовал эту волонтёрскую
+                  программу всем, кто ищет значимый и незабываемый опыт.
+                  Организация была на высшем уровне. Для меня было честью быть
+                  частью такой удивительной инициативы.
+                </p>
+              </li>
+            </ul>
+            <div class="reviews-slider__scrollbar swiper-scrollbar"></div>
+          </div>
+          <div class="reviews__slider-navigation">
+            <button
+              class="reviews__slider-button reviews__slider-button--prev reviews__slider-button--disabled button"
+              type="button"
+            >
+              <span class="visually-hidden">предыдущий отзыв</span>
+            </button>
+            <button
+              class="reviews__slider-button reviews__slider-button--next button"
+              type="button"
+            >
+              <span class="visually-hidden">следующий отзыв</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts" data-test="contacts">
+        <div class="wrapper contacts__wrapper">
+          <div class="contacts__content-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__address">
+              <ul class="contacts__list list-reset">
+                <li class="contacts__item">
+                  <p class="contacts__name">центральный офис</p>
+                  <p class="contacts__value">
+                    г. Новосибирск, ул. Щетинкина 68, <br />культурный центр
+                  </p>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__name">Телефон</p>
+                  <a class="contacts__value" href="tel:+796387687676"
+                    >+7 963 876 876 76</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__name">Email</p>
+                  <a class="contacts__value" href="mailto:info@stazh.ru"
+                    >Info@stazh.ru</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <picture class="contacts__picture">
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              width="1240"
+              height="486"
+              srcset="
+                ./img/map-desktop@1x.webp 1x,
+                ./img/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              width="678"
+              height="500"
+              srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              width="290"
+              height="240"
+              srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 1440px)"
+              width="1240"
+              height="486"
+              srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 768px)"
+              width="678"
+              height="500"
+              srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x"
+            />
+            <img
+              class="contacts__location"
+              src="./img/map-mobile@1x.png"
+              srcset="./img/map-mobile@2x.png 2x"
+              alt="Наше местоположение на карте."
+              width="290"
+              height="240"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="form" data-test="form" id="form">
+        <div class="form__wrapper">
+          <div class="form__inner">
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__description">
+              Оставьте ваши контакты, если у вас остались <br />вопросы — мы на них ответим!
+            </p>
+            <form
+              class="form__form"
+              action="https://echo.htmlacademy.ru"
+              method="POST"
+            >
+              <div class="form__input-wrapper">
+                <label class="form__label" for="input-name">Имя</label>
+                <div class="form__input-container">
+                  <input
+                    class="form__input form__input--name"
+                    type="text"
+                    id="input-name"
+                    name="input-name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="input-phone">Телефон</label>
+                <div class="form__input-container">
+                  <input
+                    class="form__input form__input--phone"
+                    type="tel"
+                    id="input-phone"
+                    name="input-phone"
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="input-message"
+                  >Ваше сообщение</label
+                >
+                <div class="form__input-container">
+                  <textarea
+                    class="form__input form__input--message"
+                    id="input-message"
+                    name="input-message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="input-city"
+                  >Выберите город</label
+                >
+                <div class="form__input-container">
+                  <select
+                    class="form__input form__input--city"
+                    name="input-city"
+                    id="input-city"
+                    required
+                  >
+                    <option value="" selected disabled hidden></option>
+                    <option value="city-moskow">Москва</option>
+                    <option value="city-spb">Санкт-Петербург</option>
+                    <option value="city-zhel">Железногорск</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__input-wrapper">
+                <div class="form__checkbox-container">
+                  <label class="form__label form__label--checkbox">
+                    <input
+                      class="form__checkbox"
+                      type="checkbox"
+                      id="input-chekbox"
+                      name="input-chekbox"
+                      required
+                    />
+                    <span class="form__checkbox-checkbox"></span>
+                    <span
+                      >Я согласен на обработку моих персональных
+                      <br />данных</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <button
+                class="form__button button button--secondary button--icon"
+                type="submit"
+              >
+                <span>Отправить</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="popup">
+        <div class="popup__overlay">
+          <div class="popup__container">
+            <button class="popup__button-close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <h2 class="popup__title">Напишите нам</h2>
+            <p class="popup__description">
+              Оставьте Ваши контакты, если у Вас остались <br />вопросы — мы на
+              них ответим!
+            </p>
+            <form
+              class="popup__form"
+              action="https://echo.htmlacademy.ru"
+              method="POST"
+            >
+              <div class="popup__input-wrapper">
+                <label class="popup__label" for="popup-input-name">Имя</label>
+                <div class="popup__input-container">
+                  <input
+                    class="popup__input popup__input--name"
+                    type="text"
+                    id="popup-input-name"
+                    name="popup-input-name"
+                  />
+                </div>
+              </div>
+              <div class="popup__input-wrapper">
+                <label class="popup__label" for="popup-input-phone"
+                  >Телефон</label
+                >
+                <div class="popup__input-container">
+                  <input
+                    class="popup__input popup__input--phone"
+                    type="tel"
+                    id="popup-input-phone"
+                    name="popup-input-phone"
+                  />
+                </div>
+              </div>
+              <div class="popup__input-wrapper">
+                <label class="popup__label" for="popup-input-city"
+                  >Выберите город</label
+                >
+                <div class="popup__input-container">
+                  <select
+                    class="popup__input popup__input--city"
+                    name="popup-input-city"
+                    id="popup-input-city"
+                  >
+                    <option value="" selected disabled hidden></option>
+                    <option value="city-moskow">Москва</option>
+                    <option value="city-spb">Санкт-Петербург</option>
+                    <option value="city-zhel">Железногорск</option>
+                  </select>
+                </div>
+              </div>
+              <div class="popup__input-wrapper">
+                <div class="popup__checkbox-container">
+                  <label class="popup__label popup__label--checkbox">
+                    <input
+                      class="popup__checkbox"
+                      type="checkbox"
+                      id="popup-input-chekbox"
+                      name="input-chekbox"
+                    />
+                    <span class="popup__checkbox-checkbox"></span>
+                    <span>
+                      Я согласен на обработку моих персональных
+                      <br />данных
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <button
+                class="button popup__button button--primary button--icon"
+                type="submit"
+              >
+                <span>Отправить</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer" data-test="page-footer">
+      <div class="wrapper page-footer__wrapper">
+        <div class="page-footer__menu-wrapper">
+          <img
+            class="page-footer__logo"
+            src="img/sprite/logo.svg"
+            alt="Лого сайта стажировки."
+            width="52"
+            height="52"
+          />
+          <ul class="page-footer__menu-list list-reset">
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#about">О проекте</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#programs">Программы</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#how-to-go"
+                >Как поехать</a
+              >
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#news">Новости</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__policy-container">
+          <a class="page-footer__privacy-policy" href="#"
+            >Политика конфиденциальности</a
+          >
+          <p class="page-footer__copyright">
+            Стажировка © 2023 Все права защищены
+          </p>
+        </div>
+        <ul class="page-footer__social-list list-reset">
+          <li class="page-footer__social-item">
+            <a
+              class="page-footer__social-link page-footer__social-link--vk"
+              href="#"
+              target="_blank"
+              ><span class="visually-hidden">Мы в ВК</span></a
+            >
+          </li>
+          <li class="page-footer__social-item">
+            <a
+              class="page-footer__social-link page-footer__social-link--ok"
+              href="#"
+              target="_blank"
+              ><span class="visually-hidden">Мы в Одноклассниках</span></a
+            >
+          </li>
+          <li class="page-footer__social-item">
+            <a
+              class="page-footer__social-link page-footer__social-link--reddit"
+              href="#"
+              target="_blank"
+              ><span class="visually-hidden">Мы на Reddit</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
