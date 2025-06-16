@@ -207,13 +207,14 @@
 
 .slider__title {
   margin: 0;
-  padding: 16px 14px;
+  padding: 18px 14px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: $color-secondary;
   background-color: $background-primary;
   border-radius: 0 16px 16px 0;
+  min-height: 140px;
 
   @media (min-width: $min-tablet-width) {
     padding: 30px 40px 24px;
