@@ -25,7 +25,7 @@
     line-height: 50px;
   }
 
-  @media (min-width: $min-tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 60px;
     padding: 11px 9px;
     font-size: 50px;
@@ -154,6 +154,7 @@
   &:hover:focus {
     background-color: $background-primary;
     border: 1px solid $background-special;
+
     &::before {
       background-color: $background-special;
     }
@@ -161,6 +162,7 @@
 
   &:active {
     background-color: $button-active;
+
     &::before {
       background-color: $color-light;
     }
@@ -169,6 +171,7 @@
   &:disabled {
     border: 1px solid $button-disabled;
     background-color: $button-disabled;
+
     &::before {
       background-color: $color-light;
     }
@@ -186,6 +189,7 @@
   &:hover:focus {
     background-color: transparent;
     border: 1px solid $color-light;
+
     &::before {
       background-color: $color-light;
     }

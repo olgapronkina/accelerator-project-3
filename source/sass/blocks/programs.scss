@@ -62,7 +62,7 @@
   padding-left: 30px;
 
   &::after {
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
     mask-size: 10px 10px;
   }
 
@@ -75,7 +75,7 @@
 
   &:hover {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -83,7 +83,7 @@
 
   &:active {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -91,7 +91,7 @@
 
   &:focus {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-light;
       mask-size: 15px 15px;
     }
@@ -158,13 +158,13 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 6px;
     left: 6px;
     width: 10px;
     height: 10px;
     background-color: $icons-background-main;
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
   }
 }
 

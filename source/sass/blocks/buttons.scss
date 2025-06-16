@@ -54,6 +54,7 @@
     &:disabled {
       color: $button-disabled;
       border: 1px solid $button-disabled;
+
       &.button--icon::before {
         background-color: $button-disabled;
       }
@@ -113,6 +114,7 @@
     &:disabled {
       color: $button-disabled;
       border: 1px solid $button-disabled;
+
       &.button--icon::before {
         background-color: $button-disabled;
       }

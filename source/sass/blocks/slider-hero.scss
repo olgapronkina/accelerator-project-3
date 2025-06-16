@@ -33,12 +33,12 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     right: -10px;
     width: 10px;
     height: 10px;
-    background-image: url('/__spritemap#sprite-angle-view');
+    background-image: url("/__spritemap#sprite-angle-view");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -62,9 +62,7 @@
   }
 }
 
-.slider
-  .slider__pagination
-  .slider__pagination-button.swiper-pagination-bullet {
+.slider .slider__pagination .slider__pagination-button.swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   margin: 0;
@@ -81,50 +79,49 @@
   }
 }
 
-.slider
-  .slider__pagination
-  .slider__pagination-button.swiper-pagination-bullet:hover {
+.slider .slider__pagination .slider__pagination-button.swiper-pagination-bullet:hover {
   border: 2px solid $color-light;
   background-color: $button-active;
   opacity: 0.7;
 }
-.slider
-  .slider__pagination
-  .slider__pagination-button.swiper-pagination-bullet:focus {
+
+.slider .slider__pagination .slider__pagination-button.swiper-pagination-bullet:focus {
   border: 2px solid $color-secondary;
   background-color: $color-secondary;
 }
 
-.slider
-  .slider__pagination-button.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.slider .slider__pagination-button.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 2px solid $button-active;
   background-color: $button-active;
 }
 
 .slider__element--first {
-  background-image: image-set(
-    url('../../img/hero-1-mobile@1x.webp') 1x type('image/webp'),
-    url('../../img/hero-1-mobile@2x.webp') 2x type('image/webp'),
-    url('../../img/hero-1-mobile@1x.jpg') 1x type('image/jpg'),
-    url('../../img/hero-1-mobile@2x.jpg') 2x type('image/jpg')
-  );
+  background-image:
+    image-set(
+      url("../../img/hero-1-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-1-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-1-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-1-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url('../../img/hero-1-tablet@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-1-tablet@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-1-tablet@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-1-tablet@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-1-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-1-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-1-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-1-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url('../../img/hero-1-desktop@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-1-desktop@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-1-desktop@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-1-desktop@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-1-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-1-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-1-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-1-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   .slider__button-more {
@@ -135,56 +132,62 @@
 }
 
 .slider__element--second {
-  background-image: image-set(
-    url('../../img/hero-2-mobile@1x.webp') 1x type('image/webp'),
-    url('../../img/hero-2-mobile@2x.webp') 2x type('image/webp'),
-    url('../../img/hero-2-mobile@1x.jpg') 1x type('image/jpg'),
-    url('../../img/hero-2-mobile@2x.jpg') 2x type('image/jpg')
-  );
+  background-image:
+    image-set(
+      url("../../img/hero-2-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-2-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-2-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-2-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url('../../img/hero-2-tablet@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-2-tablet@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-2-tablet@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-2-tablet@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-2-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-2-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-2-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-2-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url('../../img/hero-2-desktop@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-2-desktop@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-2-desktop@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-2-desktop@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-2-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-2-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-2-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-2-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
 .slider__element--third {
-  background-image: image-set(
-    url('../../img/hero-3-mobile@1x.webp') 1x type('image/webp'),
-    url('../../img/hero-3-mobile@2x.webp') 2x type('image/webp'),
-    url('../../img/hero-3-mobile@1x.jpg') 1x type('image/jpg'),
-    url('../../img/hero-3-mobile@2x.jpg') 2x type('image/jpg')
-  );
+  background-image:
+    image-set(
+      url("../../img/hero-3-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-3-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-3-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-3-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url('../../img/hero-3-tablet@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-3-tablet@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-3-tablet@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-3-tablet@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-3-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-3-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-3-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-3-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url('../../img/hero-3-desktop@1x.webp') 1x type('image/webp'),
-      url('../../img/hero-3-desktop@2x.webp') 2x type('image/webp'),
-      url('../../img/hero-3-desktop@1x.jpg') 1x type('image/jpg'),
-      url('../../img/hero-3-desktop@2x.jpg') 2x type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero-3-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-3-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-3-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-3-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
@@ -273,9 +276,9 @@
     right: -10px;
     width: 10px;
     height: 10px;
-    content: '';
+    content: "";
     background-color: $icons-main;
-    mask-image: url('/__spritemap#sprite-angle-view');
+    mask-image: url("/__spritemap#sprite-angle-view");
     mask-repeat: no-repeat;
     mask-size: 100%;
     transform: rotate(90deg);
@@ -322,7 +325,7 @@
     right: 4px;
     width: 34px;
     height: 34px;
-    content: '';
+    content: "";
     background-color: $icons-background-main;
     border-radius: 50%;
   }
@@ -333,9 +336,9 @@
     right: 4px;
     width: 34px;
     height: 34px;
-    content: '';
+    content: "";
     background-color: $icons-main;
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
     mask-size: 10px 10px;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -360,7 +363,7 @@
 
   &:hover {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -368,7 +371,7 @@
 
   &:active {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -376,7 +379,7 @@
 
   &:focus {
     &::after {
-      mask-image: url('/__spritemap#sprite-direction-arrow-view');
+      mask-image: url("/__spritemap#sprite-direction-arrow-view");
       background-color: $color-light;
       mask-size: 15px 15px;
     }

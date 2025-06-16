@@ -8,11 +8,6 @@ body {
   background-color: $background-secondary;
 }
 
-body--popup {
-  overflow: hidden; /* Блокировка прокрутки страницы */
-  height: 100vh; /* Установка высоты на 100% */
-}
-
 *,
 *::before,
 *::after {
