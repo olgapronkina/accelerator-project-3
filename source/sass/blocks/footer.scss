@@ -1,12 +1,12 @@
 .page-footer__wrapper {
   padding: 40px 15px;
   display: grid;
-  gap: 15px;
+  gap: 16px;
 
   @media (min-width: $min-tablet-width) {
     padding: 40px 45px;
     grid-template-columns: 1fr 250px;
-    gap: 25px;
+    gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,10 +45,12 @@
 
   @media (min-width: $min-tablet-width) {
     gap: 15px;
+    width: 529px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 30px;
+    min-width: 603px;
   }
 }
 
@@ -102,7 +104,7 @@
   text-decoration: underline;
   text-underline-position: under;
   color: $color-primary;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 12px;
   line-height: 14px;
 
@@ -129,6 +131,7 @@
     margin-bottom: 0;
     font-size: 14px;
     line-height: 18px;
+    order: 2;
   }
 }
 
@@ -145,6 +148,7 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
     line-height: 18px;
+    order: 1;
   }
 }
 
@@ -159,6 +163,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 20px;
     grid-column: -2 / -1;
     grid-row: 1 / 2;
   }
@@ -182,7 +187,7 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
@@ -205,7 +210,7 @@
 
 .page-footer__social-link--vk {
   &::after {
-    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-image: url('/__spritemap#sprite-vk-view');
   }
 
   &:hover::after {
@@ -225,7 +230,7 @@
 
 .page-footer__social-link--ok {
   &::after {
-    mask-image: url("/__spritemap#sprite-ok-view");
+    mask-image: url('/__spritemap#sprite-ok-view');
   }
 
   &:hover::after {
@@ -245,7 +250,7 @@
 
 .page-footer__social-link--reddit {
   &::after {
-    mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-image: url('/__spritemap#sprite-reddit-view');
   }
 
   &:hover::after {

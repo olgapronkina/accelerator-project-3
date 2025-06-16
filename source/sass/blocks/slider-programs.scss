@@ -26,7 +26,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
@@ -48,92 +48,83 @@
 }
 
 .slider-programs__slide--first {
-  background-image:
-    image-set(
-      url("../../img/programs-1-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/programs-1-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/programs-1-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/programs-1-mobile@2x.jpg") 2x type("image/jpg")
-    );
+  background-image: image-set(
+    url('../../img/programs-1-mobile@1x.webp') 1x type('image/webp'),
+    url('../../img/programs-1-mobile@2x.webp') 2x type('image/webp'),
+    url('../../img/programs-1-mobile@1x.jpg') 1x type('image/jpg'),
+    url('../../img/programs-1-mobile@2x.jpg') 2x type('image/jpg')
+  );
 
   @media (min-width: $min-tablet-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-1-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-1-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-1-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-1-tablet@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-1-tablet@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-1-tablet@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-1-tablet@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-1-tablet@2x.jpg') 2x type('image/jpg')
+    );
   }
 
   @media (min-width: $desktop-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-1-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-1-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-1-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-1-desktop@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-1-desktop@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-1-desktop@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-1-desktop@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-1-desktop@2x.jpg') 2x type('image/jpg')
+    );
   }
 }
 
 .slider-programs__slide--second {
-  background-image:
-    image-set(
-      url("../../img/programs-2-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/programs-2-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/programs-2-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/programs-2-mobile@2x.jpg") 2x type("image/jpg")
-    );
+  background-image: image-set(
+    url('../../img/programs-2-mobile@1x.webp') 1x type('image/webp'),
+    url('../../img/programs-2-mobile@2x.webp') 2x type('image/webp'),
+    url('../../img/programs-2-mobile@1x.jpg') 1x type('image/jpg'),
+    url('../../img/programs-2-mobile@2x.jpg') 2x type('image/jpg')
+  );
 
   @media (min-width: $min-tablet-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-2-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-2-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-2-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-2-tablet@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-2-tablet@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-2-tablet@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-2-tablet@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-2-tablet@2x.jpg') 2x type('image/jpg')
+    );
   }
 
   @media (min-width: $desktop-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-2-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-2-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-2-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-2-desktop@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-2-desktop@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-2-desktop@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-2-desktop@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-2-desktop@2x.jpg') 2x type('image/jpg')
+    );
   }
 }
 
 .slider-programs__slide--third {
-  background-image:
-    image-set(
-      url("../../img/programs-3-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/programs-3-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/programs-3-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/programs-3-mobile@2x.jpg") 2x type("image/jpg")
-    );
+  background-image: image-set(
+    url('../../img/programs-3-mobile@1x.webp') 1x type('image/webp'),
+    url('../../img/programs-3-mobile@2x.webp') 2x type('image/webp'),
+    url('../../img/programs-3-mobile@1x.jpg') 1x type('image/jpg'),
+    url('../../img/programs-3-mobile@2x.jpg') 2x type('image/jpg')
+  );
 
   @media (min-width: $min-tablet-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-3-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-3-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-3-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-3-tablet@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-3-tablet@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-3-tablet@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-3-tablet@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-3-tablet@2x.jpg') 2x type('image/jpg')
+    );
   }
 
   @media (min-width: $desktop-width) {
-    background-image:
-      image-set(
-        url("../../img/programs-3-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/programs-3-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/programs-3-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/programs-3-desktop@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/programs-3-desktop@1x.webp') 1x type('image/webp'),
+      url('../../img/programs-3-desktop@2x.webp') 2x type('image/webp'),
+      url('../../img/programs-3-desktop@1x.jpg') 1x type('image/jpg'),
+      url('../../img/programs-3-desktop@2x.jpg') 2x type('image/jpg')
+    );
   }
 }
 
@@ -152,12 +143,12 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 0;
     right: -18px;
     width: 18px;
     height: 18px;
-    mask-image: url("/__spritemap#sprite-angle-view");
+    mask-image: url('/__spritemap#sprite-angle-view');
     mask-size: 100%;
     mask-repeat: no-repeat;
     background-color: $background-primary;
@@ -188,6 +179,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 21.5px 18px 24.5px;
+    width: 321px;
   }
 }
 
@@ -213,7 +205,7 @@
   display: inline-block;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 30px;
@@ -225,13 +217,13 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 30px;
     top: 0;
     left: 0;
-    mask-image: url("/__spritemap#sprite-links-arrow-view");
+    mask-image: url('/__spritemap#sprite-links-arrow-view');
     mask-size: 10px 10px;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -244,7 +236,7 @@
     }
 
     &::after {
-      mask-image: url("/__spritemap#sprite-direction-arrow-view");
+      mask-image: url('/__spritemap#sprite-direction-arrow-view');
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -258,7 +250,7 @@
     }
 
     &::after {
-      mask-image: url("/__spritemap#sprite-direction-arrow-view");
+      mask-image: url('/__spritemap#sprite-direction-arrow-view');
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
@@ -272,7 +264,7 @@
     }
 
     &::after {
-      mask-image: url("/__spritemap#sprite-direction-arrow-view");
+      mask-image: url('/__spritemap#sprite-direction-arrow-view');
       background-color: $color-secondary;
       mask-size: 15px 15px;
     }
