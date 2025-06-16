@@ -23,25 +23,23 @@
   padding-top: 43px;
   padding-bottom: 40px;
   background-color: $background-special;
-  background-image:
-    image-set(
-      url("../../img/form-bg-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/form-bg-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/form-bg-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/form-bg-mobile@2x.jpg") 2x type("image/jpg")
-    );
+  background-image: image-set(
+    url('../../img/form-bg-mobile@1x.webp') 1x type('image/webp'),
+    url('../../img/form-bg-mobile@2x.webp') 2x type('image/webp'),
+    url('../../img/form-bg-mobile@1x.jpg') 1x type('image/jpg'),
+    url('../../img/form-bg-mobile@2x.jpg') 2x type('image/jpg')
+  );
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 
   @media (min-width: $min-tablet-width) {
-    background-image:
-      image-set(
-        url("../../img/form-bg-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/form-bg-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/form-bg-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/form-bg-tablet@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/form-bg-tablet@1x.webp') 1x type('image/webp'),
+      url('../../img/form-bg-tablet@2x.webp') 2x type('image/webp'),
+      url('../../img/form-bg-tablet@1x.jpg') 1x type('image/jpg'),
+      url('../../img/form-bg-tablet@2x.jpg') 2x type('image/jpg')
+    );
   }
 
   @media (min-width: $min-tablet-width) {
@@ -55,13 +53,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image:
-      image-set(
-        url("../../img/form-bg-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/form-bg-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/form-bg-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/form-bg-desktop@2x.jpg") 2x type("image/jpg")
-      );
+    background-image: image-set(
+      url('../../img/form-bg-desktop@1x.webp') 1x type('image/webp'),
+      url('../../img/form-bg-desktop@2x.webp') 2x type('image/webp'),
+      url('../../img/form-bg-desktop@1x.jpg') 1x type('image/jpg'),
+      url('../../img/form-bg-desktop@2x.jpg') 2x type('image/jpg')
+    );
     width: 1240px;
     border-radius: 16px;
     margin: 0 auto;
@@ -267,7 +264,7 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     background-color: $background-primary;
@@ -283,18 +280,22 @@
   }
 }
 
-.form__checkbox-container:has(.form__checkbox:disabled) .form__checkbox-checkbox {
+.form__checkbox-container:has(.form__checkbox:disabled)
+  .form__checkbox-checkbox {
   &::after {
     background-color: rgba(255, 255, 255, 0.6);
   }
 }
 
-.form__checkbox-container:has(.form__checkbox:disabled) .form__label--checkbox span {
+.form__checkbox-container:has(.form__checkbox:disabled)
+  .form__label--checkbox
+  span {
   cursor: unset;
   pointer-events: none;
 }
 
-.form__checkbox-container:has(.form__checkbox:not(:disabled)):hover .form__checkbox-checkbox {
+.form__checkbox-container:has(.form__checkbox:not(:disabled)):hover
+  .form__checkbox-checkbox {
   &::after {
     background-color: unset;
   }
@@ -314,20 +315,21 @@
   outline: 1px solid rgba(255, 94, 102, 1);
 }
 
-.form__checkbox-container:has(.form__checkbox:not(:disabled):checked) .form__checkbox-checkbox {
+.form__checkbox-container:has(.form__checkbox:not(:disabled):checked)
+  .form__checkbox-checkbox {
   &::after {
     background-color: $background-primary;
   }
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     top: 50%;
     transform: translateY(-50%);
     background-color: $background-special;
-    mask-image: url("/__spritemap#sprite-check-view");
+    mask-image: url('/__spritemap#sprite-check-view');
     mask-size: 10px 10px;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -335,20 +337,21 @@
   }
 }
 
-.form__checkbox-container:has(.form__checkbox:not(:disabled):checked:hover) .form__checkbox-checkbox {
+.form__checkbox-container:has(.form__checkbox:not(:disabled):checked:hover)
+  .form__checkbox-checkbox {
   &::after {
     background-color: $background-special;
   }
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     top: 50%;
     transform: translateY(-50%);
     background-color: $background-primary;
-    mask-image: url("/__spritemap#sprite-check-view");
+    mask-image: url('/__spritemap#sprite-check-view');
     mask-size: 10px 10px;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -378,8 +381,8 @@
     background-color: $icons-background-main;
     top: 4px;
     right: 4px;
-    mask-image: url("/__spritemap#sprite-links-arrow-view");
-    mask-size: 10px 10px;
+    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-size: 8px 8px;
   }
 
   @media (min-width: $min-tablet-width) {
@@ -400,9 +403,9 @@
   }
 
   &::after {
-    mask-image: url("/__spritemap#sprite-direction-arrow-view");
+    mask-image: url('/__spritemap#sprite-direction-arrow-view');
     background-color: $background-primary;
-    mask-size: 15px 15px;
+    mask-size: 12px 12px;
     right: 4px;
   }
 }
@@ -413,7 +416,7 @@
 
 .form__button:focus {
   &::after {
-    mask-image: url("/__spritemap#sprite-direction-arrow-view");
+    mask-image: url('/__spritemap#sprite-direction-arrow-view');
     mask-size: 15px 15px;
     right: 4px;
   }
@@ -426,14 +429,14 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 16px;
     height: 16px;
     background-color: $background-primary;
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
-    mask-image: url("/__spritemap#sprite-expand-arrow-view");
+    mask-image: url('/__spritemap#sprite-expand-arrow-view');
     mask-size: 16px 16px;
     mask-repeat: no-repeat;
   }

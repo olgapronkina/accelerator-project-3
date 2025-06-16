@@ -59,11 +59,11 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 16px;
     height: 16px;
     background-color: $button-border;
-    mask-image: url("/__spritemap#sprite-close-button-view");
+    mask-image: url('/__spritemap#sprite-close-button-view');
     mask-size: 16px 16px;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -192,7 +192,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -202,12 +202,13 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     background-color: $background-primary;
     width: 34px;
     height: 34px;
     right: 4px;
-    mask-image: url("/__spritemap#sprite-links-arrow-view");
+    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-size: 8px 8px;
     mask-repeat: no-repeat;
     mask-position: center;
     transition: all 150ms ease;
@@ -245,7 +246,7 @@
   }
 
   &::after {
-    mask-image: url("/__spritemap#sprite-direction-arrow-view");
+    mask-image: url('/__spritemap#sprite-direction-arrow-view');
     background-color: $button-border;
     mask-size: 15px 15px;
     right: 4px;
@@ -258,7 +259,7 @@
 
 .popup__button:focus {
   &::after {
-    mask-image: url("/__spritemap#sprite-direction-arrow-view");
+    mask-image: url('/__spritemap#sprite-direction-arrow-view');
     mask-size: 15px 15px;
     right: 4px;
   }
