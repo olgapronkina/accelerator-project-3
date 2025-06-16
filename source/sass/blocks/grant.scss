@@ -19,10 +19,10 @@
 }
 
 .grant__description-container {
-  margin-bottom: 30px;
+  margin-bottom: 41px;
 
   @media (min-width: $min-tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,8 +68,20 @@
 }
 
 .grant__image {
+  width: 290px;
+  height: 200px;
   display: block;
   border-radius: 16px;
+
+  @media (min-width: $min-tablet-width) {
+    width: 678px;
+    height: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 498px;
+    height: 363px;
+  }
 }
 
 .grant__requirements-title {
@@ -146,6 +158,13 @@
     font-size: 16px;
     width: 305px;
     box-sizing: border-box;
+
+    &::before {
+      top: -12px;
+      left: -16px;
+      font-size: 22px;
+      line-height: 22px;
+    }
 
     &::after {
       font-size: 22px;
