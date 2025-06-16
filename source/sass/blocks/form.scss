@@ -460,7 +460,7 @@
 
 .form__input-wrapper:has(.form__checkbox-container) {
   height: 42px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @media (min-width: $min-tablet-width) {
     margin-bottom: 13px;
@@ -468,7 +468,7 @@
 }
 
 .form__input-wrapper:has(.form__input--city) {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: $min-tablet-width) {
     margin-bottom: 25px;
